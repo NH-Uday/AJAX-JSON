@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is me</title>
+	<script type="text/javascript">
+	function loadData(){
+		var students = '[{"firstName":"Alex","lastName":"Murphy"},{"firstName":"Dennis", "lastName":"Ritchie"},{"firstName":"Linus","lastName": "Torvalds"}]';
+		var message= "";
+		students=JSON.parse(students);
+		//alert(students[1].firstName);
+		for(i=0;i<students.length;i++){
+			message=message+students[i]["lastName"]+"<br/>";
+		}
+		document.getElementById("student").innerHTML=message;
+	}
+	</script>
+</head>
+<body>
+<div id="student">
+No information yet
+</div>
+<input type="button" value="ok" onclick="loadData()">
+
+</body>
+
+</html>

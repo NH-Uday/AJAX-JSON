@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<user type="regular">
+		<id>123</id>
+		<uname>raju</uname>
+		<pass>123</pass>
+		<email>raju@yahoo.com</email>
+	</user>
+	<user type="admin">
+		<id>321</id>
+		<uname>mina</uname>
+		<pass>321</pass>
+		<email>mina@yahoo.com</email>
+		<location>Dhaka</location>
+	</user>
+</data>

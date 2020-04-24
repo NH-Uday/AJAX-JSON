@@ -1,0 +1,36 @@
+5<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function second(){
+	var un=document.fm.uName.value; //document=DOM object
+	if(un.length<5){
+		document.fm.uName.style.color="red";
+		//document.fm.uName.style.border="1px solid red";
+		document.getElementById("msg").innerHTML="invalid name";
+	}
+	else{
+		document.fm.uName.style.color="black";
+		document.getElementById("msg").innerHTML="valid name";
+	}
+	//alert(un);
+}
+function first(){
+	alert("Hello");
+}
+</script>
+</head>
+<body>
+<form id="fm" action="test2.php" method="post" name="fm"><pre>
+	Your Name: 	<input onkeyup="second()" type="text" name="uName" id="txt"><span id="msg"></span>
+	Your password: <input type="password" name="pass" id="mypass">
+	<a href="regi.php">Signup</a>
+	<input type="button" ondblclick="first()" value="Test" name="test">
+	<input type="submit" value="Login" name="submit">
+	</pre>
+</form>
+<script  type="text/javascript">
+//first();
+</script>
+</body>
+</html>
